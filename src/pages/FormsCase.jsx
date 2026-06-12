@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next'
 import { CaseBathy } from '../components/Bathymetry'
 import Backbar from '../components/Backbar'
 import Reveal from '../components/Reveal'
-import ChannelRulesDemo from '../components/ChannelRulesDemo'
 
 const html = (t, key) => ({ dangerouslySetInnerHTML: { __html: t(key) } })
 
@@ -57,7 +56,6 @@ export default function FormsCase() {
           <div className="eyebrow">{t('fm.s2_eyebrow')}</div>
           <h2 className="cs-h">{t('fm.s2_h')}</h2>
           <div className="cs-body"><p {...html(t, 'fm.s2_intro')} /></div>
-          <Reveal className="quote src-poc" {...html(t, 'fm.quote')} />
           <div className="cs-body" style={{ marginTop: '20px' }}><p>{t('fm.s2_after')}</p></div>
         </div>
       </section>
@@ -81,38 +79,11 @@ export default function FormsCase() {
 
       <section className="cs-section">
         <div className="wrap">
-          <div className="eyebrow">{t('fm.s4_eyebrow')}</div>
-          <h2 className="cs-h">{t('fm.s4_h')}</h2>
-          <div className="cs-body"><p {...html(t, 'fm.s4_body')} /></div>
-          <ChannelRulesDemo />
-        </div>
-      </section>
-
-      <section className="cs-section">
-        <div className="wrap">
           <div className="eyebrow">{t('fm.s5_eyebrow')}</div>
           <h2 className="cs-h">{t('fm.s5_h')}</h2>
           <Reveal className="phase"><div><div className="ph-v">v1</div><span className="ph-st">{t('fm.ph1_st')}</span></div><div><b>{t('fm.ph1_b')}</b><p>{t('fm.ph1_p')}</p></div></Reveal>
           <Reveal className="phase"><div><div className="ph-v">v2</div><span className="ph-st">{t('fm.ph2_st')}</span></div><div><b>{t('fm.ph2_b')}</b><p>{t('fm.ph2_p')}</p></div></Reveal>
           <Reveal className="phase"><div><div className="ph-v">v3</div><span className="ph-st">{t('fm.ph3_st')}</span></div><div><b>{t('fm.ph3_b')}</b><p>{t('fm.ph3_p')}</p></div></Reveal>
-        </div>
-      </section>
-
-      <section className="cs-section">
-        <div className="wrap">
-          <div className="eyebrow">{t('fm.s6_eyebrow')}</div>
-          <h2 className="cs-h">{t('fm.s6_h')}</h2>
-          <p className="cs-body">{t('fm.s6_body')}</p>
-          <Reveal as="table" className="dlog">
-            <thead><tr><th>{t('fm.dlog_h1')}</th><th>{t('fm.dlog_h2')}</th><th>{t('fm.dlog_h3')}</th></tr></thead>
-            <tbody>
-              <tr><td>13 May 26</td><td>{t('fm.dlog_r1')}</td><td><span className="who">{t('fm.who_ceo')}</span></td></tr>
-              <tr><td>14 May 26</td><td>{t('fm.dlog_r2')}</td><td><span className="who me">{t('fm.who_me')}</span></td></tr>
-              <tr><td>15 May 26</td><td>{t('fm.dlog_r3')}</td><td><span className="who me">{t('fm.who_me')}</span></td></tr>
-              <tr><td>28 May 26</td><td>{t('fm.dlog_r4')}</td><td><span className="who me">{t('fm.who_me')}</span></td></tr>
-            </tbody>
-          </Reveal>
-          <p className="cs-body" style={{ marginTop: '18px' }}>{t('fm.s6_after')}</p>
         </div>
       </section>
 

@@ -62,7 +62,7 @@ export default function EcommerceCase() {
             <div className="tl-row"><div className="tl-q">Q4 2025</div><div className="tl-v">v0</div><div className="tl-s" {...html(t, 'ec.tl1_s')} /></div>
             <div className="tl-row"><div className="tl-q">Q1 2026</div><div className="tl-v">v1</div><div className="tl-s" {...html(t, 'ec.tl2_s')} /></div>
             <div className="tl-row"><div className="tl-q">Q2 2026</div><div className="tl-v">v2–v3</div><div className="tl-s" {...html(t, 'ec.tl3_s')} /></div>
-            <div className="tl-row"><div className="tl-q">Q3 2026</div><div className="tl-v">v4 · GA</div><div className="tl-s" {...html(t, 'ec.tl4_s')} /></div>
+            <div className="tl-row"><div className="tl-q">Q3 2026</div><div className="tl-v">v4 · Launch</div><div className="tl-s" {...html(t, 'ec.tl4_s')} /></div>
           </Reveal>
         </div>
       </section>
@@ -79,17 +79,6 @@ export default function EcommerceCase() {
           </Reveal>
 
           <Reveal className="callout">
-            <div className="lbl">{t('ec.c2_l')}</div>
-            <p>{t('ec.c2_p')}</p>
-          </Reveal>
-          <Reveal className="matrix">
-            <div className="mx-head"><div>{t('ec.mx_h1')}</div><div>{t('ec.mx_h2')}</div><div>{t('ec.mx_h3')}</div></div>
-            <div className="mx-row"><div>{t('ec.mx_r1_l')}</div><div className="mx-cell" {...html(t, 'ec.mx_r1_c1')} /><div className="mx-cell" {...html(t, 'ec.mx_r1_c2')} /></div>
-            <div className="mx-row"><div>{t('ec.mx_r2_l')}</div><div className="mx-cell" {...html(t, 'ec.mx_r2_c1')} /><div className="mx-cell" {...html(t, 'ec.mx_r2_c2')} /></div>
-            <div className="mx-row"><div>{t('ec.mx_r3_l')}</div><div className="mx-cell" {...html(t, 'ec.mx_r3_c1')} /><div className="mx-cell" {...html(t, 'ec.mx_r3_c2')} /></div>
-          </Reveal>
-
-          <Reveal className="callout" style={{ marginTop: '32px' }}>
             <div className="lbl">{t('ec.c3_l')}</div>
             <p>{t('ec.c3_p')}</p>
           </Reveal>
