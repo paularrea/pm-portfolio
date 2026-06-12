@@ -4,7 +4,7 @@ import { casesEn, casesEs } from './locales/cases'
 
 const en = {
   nav_work: 'Work', nav_approach: 'How I work', nav_exp: 'Experience', nav_contact: 'Contact',
-  hero_intro: 'I come from frontend development — so instead of writing long specs, <strong>I prototype the full flow and bring it to the team in days.</strong> The trio discusses something real, not a document.',
+  hero_intro: "I'm a Product Manager who came up through frontend development. So instead of handing the team a long spec, <strong>I prototype the full flow and put something real in front of them in days.</strong> The trio debates a working product, not a document — and we ship faster for it.",
   hero_role: 'Product Manager <b>///</b> B2B SaaS · Booking platforms · AI‑first discovery',
   str1_title: 'Discovery first', str1_p: 'I prototype flows before writing specs — validated proposals to the trio in days, not sprints.',
   str2_title: 'Technical bridge', str2_p: 'Two years as a frontend developer means I talk to engineering in their language and know where my opinion ends.',
@@ -29,7 +29,7 @@ const en = {
 
 const es = {
   nav_work: 'Proyectos', nav_approach: 'Cómo trabajo', nav_exp: 'Experiencia', nav_contact: 'Contacto',
-  hero_intro: 'Vengo del desarrollo frontend — así que en vez de escribir specs largas, <strong>prototipo el flujo completo y lo llevo al equipo en días.</strong> El trío discute algo real, no un documento.',
+  hero_intro: 'Soy Product Manager y vengo del desarrollo frontend. Así que en vez de entregar una spec larga, <strong>prototipo el flujo completo y pongo algo real delante del equipo en días.</strong> El trío debate un producto funcionando, no un documento — y por eso shipeamos más rápido.',
   hero_role: 'Product Manager <b>///</b> B2B SaaS · Plataformas de reservas · Discovery AI-first',
   str1_title: 'Discovery primero', str1_p: 'Prototipo flujos antes de escribir specs — propuestas validadas al trío en días, no en sprints.',
   str2_title: 'Puente técnico', str2_p: 'Dos años como developer frontend me permiten hablar con engineering en su lenguaje y saber dónde termina mi opinión.',
