@@ -4,7 +4,7 @@ import { casesEn, casesEs } from './locales/cases'
 
 const en = {
   nav_work: 'Work', nav_approach: 'How I work', nav_exp: 'Experience', nav_contact: 'Contact',
-  hero_intro: 'Product Manager with 5+ years in digital product, and a frontend developer before that. <strong>I lead with prototypes, not specs</strong> — the team gets a working flow to react to early, so we make sharper calls and ship with less guesswork.',
+  hero_intro: 'Product Manager with 5+ years in digital product — 3 as a PM, 2 as a frontend developer before that. <strong>I lead with prototypes, not specs</strong> — the team gets a working flow to react to early, so we make sharper calls and ship with less guesswork.',
   hero_role: 'Product Manager <b>///</b> B2B SaaS · Booking platforms · AI‑first discovery',
   str1_title: 'Discovery first', str1_p: 'I prototype flows before writing specs — validated proposals to the trio in days, not sprints.',
   str2_title: 'Technical bridge', str2_p: 'Two years as a frontend developer means I talk to engineering in their language and know where my opinion ends.',
@@ -29,7 +29,7 @@ const en = {
 
 const es = {
   nav_work: 'Proyectos', nav_approach: 'Cómo trabajo', nav_exp: 'Experiencia', nav_contact: 'Contacto',
-  hero_intro: 'Product Manager con 5+ años en producto digital, y developer frontend antes de eso. <strong>Lidero con prototipos, no con specs</strong> — el equipo recibe pronto un flujo funcionando con el que reaccionar, así tomamos mejores decisiones y shipeamos con menos suposiciones.',
+  hero_intro: 'Product Manager con 5+ años en producto digital — 3 como PM, 2 como developer frontend antes de eso. <strong>Lidero con prototipos, no con specs</strong> — el equipo recibe pronto un flujo funcionando con el que reaccionar, así tomamos mejores decisiones y shipeamos con menos suposiciones.',
   hero_role: 'Product Manager <b>///</b> B2B SaaS · Plataformas de reservas · Discovery AI-first',
   str1_title: 'Discovery primero', str1_p: 'Prototipo flujos antes de escribir specs — propuestas validadas al trío en días, no en sprints.',
   str2_title: 'Puente técnico', str2_p: 'Dos años como developer frontend me permiten hablar con engineering en su lenguaje y saber dónde termina mi opinión.',
