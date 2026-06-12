@@ -32,8 +32,9 @@ export const casesEn = {
     s3_h: 'Four quarters, four releases — all live',
     tl1_s: '<strong>Foundation.</strong> Shell, catalog, Items (simplest product type), cart, checkout, branding, deep links. First release to production.',
     tl2_s: '<strong>Depth.</strong> Multi-product cart, Shadow DOM consent isolation, add-ons, participant forms, multi-language + RTL.',
-    tl3_s: '<strong>Complex products.</strong> Nested catalog. Flexible Sessions. Then Courses with dual-check capacity, promo codes, pre-auth, availability periods, age validation.',
-    tl4_s: '<strong>Launch.</strong> Rentals (specific-unit allocation, duration tiers, pricing rules) — the one product type where the backend logic was genuinely extended. General availability: full launch and outreach to all ~300 schools.',
+    tl3_s: '<strong>Flexible Sessions.</strong> Nested catalog and the first complex product type — sessions with availability windows and capacity.',
+    tl4_s: '<strong>Courses.</strong> Multi-session products with dual-check capacity, promo codes, pre-auth, availability periods and age validation.',
+    tl5_s: '<strong>Launch.</strong> Rentals (specific-unit allocation, duration tiers, pricing rules) — the one product type where the backend logic was genuinely extended. General availability: full launch and outreach to all ~300 schools.',
 
     s4_eyebrow: 'Decision work',
     s4_h: 'Technical decisions in language everyone can act on',
@@ -164,8 +165,9 @@ export const casesEs = {
     s3_h: 'Cuatro trimestres, cuatro releases — todos en producción',
     tl1_s: '<strong>Foundation.</strong> Shell, catálogo, Items (el tipo de producto más simple), carrito, checkout, branding, deep links. Primer release a producción.',
     tl2_s: '<strong>Profundidad.</strong> Carrito multi-producto, aislamiento de consentimiento con Shadow DOM, add-ons, formularios de participante, multi-idioma + RTL.',
-    tl3_s: '<strong>Productos complejos.</strong> Catálogo anidado. Sesiones Flexibles. Luego Cursos con capacidad de doble verificación, códigos promo, pre-autorización, periodos de disponibilidad, validación de edad.',
-    tl4_s: '<strong>Lanzamiento.</strong> Alquileres (asignación de unidad específica, tramos de duración, reglas de precio) — el único tipo de producto donde la lógica de backend se extendió de verdad. General availability: lanzamiento completo y salida a las ~300 escuelas.',
+    tl3_s: '<strong>Sesiones Flexibles.</strong> Catálogo anidado y el primer tipo de producto complejo — sesiones con ventanas de disponibilidad y aforo.',
+    tl4_s: '<strong>Cursos.</strong> Productos multi-sesión con capacidad de doble verificación, códigos promo, pre-autorización, periodos de disponibilidad y validación de edad.',
+    tl5_s: '<strong>Lanzamiento.</strong> Alquileres (asignación de unidad específica, tramos de duración, reglas de precio) — el único tipo de producto donde la lógica de backend se extendió de verdad. General availability: lanzamiento completo y salida a las ~300 escuelas.',
 
     s4_eyebrow: 'Trabajo de decisión',
     s4_h: 'Decisiones técnicas en un lenguaje sobre el que todos pueden actuar',
