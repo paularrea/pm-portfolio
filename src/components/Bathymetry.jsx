@@ -34,10 +34,10 @@ function smoothOpen(pts) {
 // parallel to the coast — wide on the shelf, tight across the continental
 // slope band, then spreading on the deep plain. Depth 0 is the coastline,
 // where the Barcelona marker sits.
-const COAST_A = [480, 980] // shoreline anchor, lower-left
-const COAST_D = [0.59748, -0.80188] // along-coast unit vector (toward upper-right)
-const COAST_N = [0.80188, 0.59748] // seaward normal (toward lower-right, deeper)
-const COAST_L = 1272 // coastline length across the viewBox
+const COAST_A = [120, 1000] // shoreline anchor, bottom-left corner
+const COAST_D = [0.79394, -0.60799] // along-coast unit vector (toward upper-right)
+const COAST_N = [0.60799, 0.79394] // seaward normal (toward lower-right, deeper)
+const COAST_L = 1400 // coastline length across the viewBox
 
 // point on contour `i` at along-coast parameter t (0 = anchor, 1 = far end)
 function coastPoint(t, depthOffset, wobble) {
@@ -48,35 +48,51 @@ function coastPoint(t, depthOffset, wobble) {
 }
 
 function makeContours() {
-  const N = 20
+  const N = 16
   const ts = []
-  for (let t = -0.2; t <= 1.2; t += 0.06) ts.push(t)
+  for (let t = -0.9; t <= 1.9; t += 0.045) ts.push(t)
 
-  // cumulative seaward offsets — gap tightens across the slope band (i≈8)
-  const depths = []
-  let d = 16
-  for (let i = 0; i < N; i++) {
-    depths.push(d)
-    const slope = Math.exp(-Math.pow(i - 8, 2) / 8)
-    d += 34 - 20 * slope
-  }
+  // the first contour is depth 0 — the shoreline that runs through the BCN
+  // marker; the rest pack seaward (lower-right), leaving the left side clear.
+  const OFF_START = 0
+  const OFF_GAP = 54
 
-  // shared organic coastline shape so every contour stays parallel (no crossing)
+  // shared coastline shape keeps every contour roughly parallel (no crossing) —
+  // multi-scale undulations echo the real, organic shoreline
   const shape = (t) =>
-    26 * Math.sin(t * 4.6 + 0.5) +
-    12 * Math.sin(t * 9.2 + 1.9) +
-    6 * Math.sin(t * 15 + 0.3)
+    55 * Math.sin(t * 3.0 + 0.5) +
+    28 * Math.sin(t * 5.7 + 1.9) +
+    14 * Math.sin(t * 9.5 + 0.3) +
+    7 * Math.sin(t * 15 + 1.1)
 
-  return depths.map((depth, i) =>
-    ts.map((t) => {
-      const w = shape(t) + 4 * Math.sin(t * 7 + i * 0.8)
-      return coastPoint(t, depth, w)
+  return Array.from({ length: N }, (_, i) => {
+    const off = OFF_START + i * OFF_GAP
+    const depth = i / (N - 1) // 0 at the coast → 1 in the deep
+    const amp = depth * 50 // deeper contours grow wavier, like the canyon offshore
+    return ts.map((t) => {
+      const w =
+        shape(t) +
+        amp * (0.55 * Math.sin(t * 4.8 + i * 0.3) + 0.45 * Math.sin(t * 8.3 + i * 0.22)) +
+        6 * Math.sin(t * 4.5 + i * 0.5)
+      return coastPoint(t, off, w)
     })
-  )
+  })
 }
 
 const CONTOURS = makeContours()
-const MARKER = coastPoint(0.62, 0, 0) // Barcelona, on the coastline (depth 0)
+
+// Barcelona marker sits exactly on the first contour (depth 0 / shoreline):
+// pick the vertex of CONTOURS[0] nearest a pleasing spot up on the coast.
+const MARKER = (() => {
+  const line = CONTOURS[0]
+  let best = line[0]
+  let bd = Infinity
+  for (const p of line) {
+    const d = Math.hypot(p[0] - 950, p[1] - 350)
+    if (d < bd) { bd = d; best = p }
+  }
+  return best
+})()
 
 // --- component --------------------------------------------------------------
 
@@ -171,13 +187,13 @@ export function HeroBathy() {
   return (
     <div className="bathy" aria-hidden="true">
       <svg ref={svgRef} viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="#0E1B2A" strokeWidth="1.1" fill="none">
+        <g stroke="#0E1B2A" strokeWidth="1.3" fill="none">
           {CONTOURS.map((line, i) => (
             <path
               key={i}
               ref={(el) => (pathRefs.current[i] = el)}
               d={smoothOpen(line)}
-              strokeOpacity={(i === 0 ? 0.24 : 0.15 - i * 0.0022).toFixed(3)}
+              strokeOpacity={(0.32 - i * 0.009).toFixed(3)}
             />
           ))}
         </g>

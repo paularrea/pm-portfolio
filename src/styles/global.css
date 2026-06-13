@@ -366,6 +366,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(247,246,241,.
 .drift2{animation:driftB 24s ease-in-out infinite}
 .drift3{animation:driftC 20s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.drift,.drift2,.drift3{animation:none!important}html{scroll-behavior:auto}}
+@media(max-width:760px){.bx-coord{display:none}}
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
 .reveal.in{opacity:1;transform:none}
 
