@@ -59,11 +59,26 @@ export default function EcommerceCase() {
           <div className="eyebrow">{t('ec.s3_eyebrow')}</div>
           <h2 className="cs-h">{t('ec.s3_h')}</h2>
           <Reveal className="tl">
-            <div className="tl-row"><div className="tl-q">Q4 2025</div><div className="tl-v">v0</div><div className="tl-s" {...html(t, 'ec.tl1_s')} /></div>
-            <div className="tl-row"><div className="tl-q">Q1 2026</div><div className="tl-v">v1</div><div className="tl-s" {...html(t, 'ec.tl2_s')} /></div>
-            <div className="tl-row"><div className="tl-q">Q1 2026</div><div className="tl-v">v2</div><div className="tl-s" {...html(t, 'ec.tl3_s')} /></div>
-            <div className="tl-row"><div className="tl-q">Q2 2026</div><div className="tl-v">v3</div><div className="tl-s" {...html(t, 'ec.tl4_s')} /></div>
-            <div className="tl-row"><div className="tl-q">Q2 2026</div><div className="tl-v">v4 · Launch</div><div className="tl-s" {...html(t, 'ec.tl5_s')} /></div>
+            <div className="tl-group">
+              <div className="tl-q">Q4 2025</div>
+              <div className="tl-rows">
+                <div className="tl-row"><div className="tl-v">v0</div><div className="tl-s" {...html(t, 'ec.tl1_s')} /></div>
+              </div>
+            </div>
+            <div className="tl-group">
+              <div className="tl-q">Q1 2026</div>
+              <div className="tl-rows">
+                <div className="tl-row"><div className="tl-v">v1</div><div className="tl-s" {...html(t, 'ec.tl2_s')} /></div>
+                <div className="tl-row"><div className="tl-v">v2</div><div className="tl-s" {...html(t, 'ec.tl3_s')} /></div>
+              </div>
+            </div>
+            <div className="tl-group">
+              <div className="tl-q">Q2 2026</div>
+              <div className="tl-rows">
+                <div className="tl-row"><div className="tl-v">v3</div><div className="tl-s" {...html(t, 'ec.tl4_s')} /></div>
+                <div className="tl-row"><div className="tl-v">v4 · Launch</div><div className="tl-s" {...html(t, 'ec.tl5_s')} /></div>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>

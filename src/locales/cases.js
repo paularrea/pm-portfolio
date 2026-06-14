@@ -11,7 +11,7 @@ export const casesEn = {
     title: 'Replatforming an eCommerce for ~300 schools',
     lede: 'Moving six years of accumulated product surface — 4 complex product types, 11 payment gateways, multi-language with RTL — from a legacy Ember.js minisite to a modern, embeddable React widget. The goal wasn\'t parity: it was a cleaner UI and a sharper booking UX that closes more bookings for schools — shipped without ever taking the old store offline.',
     meta_role_l: 'Role', meta_role_v: 'Sole PM, reporting to the CEO',
-    meta_time_l: 'Timeline', meta_time_v: 'Q4 2025 → Q3 2026',
+    meta_time_l: 'Timeline', meta_time_v: 'Q4 2025 → Q2 2026',
     meta_team_l: 'Team', meta_team_v: '~5 engineers · shared design · CS',
     meta_stack_l: 'Stack', meta_stack_v: 'Ember minisite → React/Next.js widget',
 
@@ -29,7 +29,7 @@ export const casesEn = {
     stat4_s: 'Limitations doc — P0/P1/P2 gaps published before launch, not after',
 
     s3_eyebrow: 'Timeline',
-    s3_h: 'Four quarters, four releases — all live',
+    s3_h: 'Three quarters, five releases — all live',
     tl1_s: '<strong>Foundation.</strong> Shell, catalog, Items (simplest product type), cart, checkout, branding, deep links. First release to production.',
     tl2_s: '<strong>Depth.</strong> Multi-product cart, Shadow DOM consent isolation, add-ons, participant forms, multi-language + RTL.',
     tl3_s: '<strong>Flexible Sessions.</strong> Nested catalog and the first complex product type — sessions with availability windows and capacity.',
@@ -115,6 +115,7 @@ export const casesEn = {
 
     s5_eyebrow: 'Delivery',
     s5_h: 'Phases that each retire a piece of the old world',
+    gap: 'Other roadmap work shipped in between',
     ph1_st: 'Live · production',
     ph1_b: 'Standalone waivers, surveys & enquiry forms',
     ph1_p: 'Schools create their own forms in the back-office and share them via link (WhatsApp, email). Submissions land in the BO for staff to review. SurveyJS-based with 12 UI elements deliberately stripped to ship a focused product. Feature-flagged rollout per school. Submissions version-tied and immutable once signed.',
@@ -144,7 +145,7 @@ export const casesEs = {
     title: 'Replataformizar un eCommerce para ~300 escuelas',
     lede: 'Mover seis años de superficie de producto acumulada — 4 tipos de producto complejos, 11 pasarelas de pago, multi-idioma con RTL — de un minisite legacy en Ember.js a un widget moderno y embebible en React. El objetivo no era la paridad: era una UI más limpia y una UX de reserva más afilada que cierra más reservas para las escuelas — shipeada sin tirar nunca la tienda antigua.',
     meta_role_l: 'Rol', meta_role_v: 'Único PM, reportando al CEO',
-    meta_time_l: 'Cronología', meta_time_v: 'Q4 2025 → Q3 2026',
+    meta_time_l: 'Cronología', meta_time_v: 'Q4 2025 → Q2 2026',
     meta_team_l: 'Equipo', meta_team_v: '~5 ingenieros · diseño compartido · CS',
     meta_stack_l: 'Stack', meta_stack_v: 'Minisite Ember → widget React/Next.js',
 
@@ -162,7 +163,7 @@ export const casesEs = {
     stat4_s: 'Doc de limitaciones — gaps P0/P1/P2 publicados antes del lanzamiento, no después',
 
     s3_eyebrow: 'Cronología',
-    s3_h: 'Cuatro trimestres, cuatro releases — todos en producción',
+    s3_h: 'Tres trimestres, cinco releases — todos en producción',
     tl1_s: '<strong>Foundation.</strong> Shell, catálogo, Items (el tipo de producto más simple), carrito, checkout, branding, deep links. Primer release a producción.',
     tl2_s: '<strong>Profundidad.</strong> Carrito multi-producto, aislamiento de consentimiento con Shadow DOM, add-ons, formularios de participante, multi-idioma + RTL.',
     tl3_s: '<strong>Sesiones Flexibles.</strong> Catálogo anidado y el primer tipo de producto complejo — sesiones con ventanas de disponibilidad y aforo.',
@@ -248,6 +249,7 @@ export const casesEs = {
 
     s5_eyebrow: 'Delivery',
     s5_h: 'Fases que cada una retira una pieza del viejo mundo',
+    gap: 'Otro trabajo de roadmap shipeado en medio',
     ph1_st: 'En producción',
     ph1_b: 'Waivers, encuestas y formularios de consulta standalone',
     ph1_p: 'Las escuelas crean sus propios formularios en el back-office y los comparten vía link (WhatsApp, email). Las submissions caen en el BO para que el staff las revise. Basado en SurveyJS con 12 elementos de UI deliberadamente eliminados para shipear un producto enfocado. Rollout con feature-flag por escuela. Submissions ligadas a versión e inmutables una vez firmadas.',

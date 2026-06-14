@@ -81,9 +81,28 @@ export default function FormsCase() {
         <div className="wrap">
           <div className="eyebrow">{t('fm.s5_eyebrow')}</div>
           <h2 className="cs-h">{t('fm.s5_h')}</h2>
-          <Reveal className="phase"><div><div className="ph-v">v1</div><span className="ph-st">{t('fm.ph1_st')}</span></div><div><b>{t('fm.ph1_b')}</b><p>{t('fm.ph1_p')}</p></div></Reveal>
-          <Reveal className="phase"><div><div className="ph-v">v2</div><span className="ph-st">{t('fm.ph2_st')}</span></div><div><b>{t('fm.ph2_b')}</b><p>{t('fm.ph2_p')}</p></div></Reveal>
-          <Reveal className="phase"><div><div className="ph-v">v3</div><span className="ph-st">{t('fm.ph3_st')}</span></div><div><b>{t('fm.ph3_b')}</b><p>{t('fm.ph3_p')}</p></div></Reveal>
+          <Reveal className="tl">
+            <div className="tl-group">
+              <div className="tl-q">Q3 2023</div>
+              <div className="tl-rows">
+                <div className="tl-row"><div className="tl-v">v1</div><div className="tl-s"><span className="ph-st">{t('fm.ph1_st')}</span><b>{t('fm.ph1_b')}</b><p>{t('fm.ph1_p')}</p></div></div>
+              </div>
+            </div>
+            <div className="tl-gap">{t('fm.gap')}</div>
+            <div className="tl-group">
+              <div className="tl-q">2025</div>
+              <div className="tl-rows">
+                <div className="tl-row"><div className="tl-v">v2</div><div className="tl-s"><span className="ph-st">{t('fm.ph2_st')}</span><b>{t('fm.ph2_b')}</b><p>{t('fm.ph2_p')}</p></div></div>
+              </div>
+            </div>
+            <div className="tl-gap">{t('fm.gap')}</div>
+            <div className="tl-group">
+              <div className="tl-q">Q1 2026</div>
+              <div className="tl-rows">
+                <div className="tl-row"><div className="tl-v">v3</div><div className="tl-s"><span className="ph-st">{t('fm.ph3_st')}</span><b>{t('fm.ph3_b')}</b><p>{t('fm.ph3_p')}</p></div></div>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 

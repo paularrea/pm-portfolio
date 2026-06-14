@@ -15,7 +15,6 @@ export default function Hero() {
           <p className="hero-intro" dangerouslySetInnerHTML={{ __html: t('hero_intro') }} />
           <div className="hero-photo">
             <img src={profile} alt="Pau Larrea" />
-            <div className="tag">BARCELONA<br />41.38°N · 2.17°E</div>
           </div>
         </div>
         <h1 className="hero-name">
