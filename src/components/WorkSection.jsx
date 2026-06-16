@@ -4,11 +4,11 @@ import CaseCard from './CaseCard'
 function EcommerceWireframe() {
   return (
     <div className="wf-wrap">
-      <div className="bw-badge"><i></i>BLOOWATCH ECOMMERCE WIDGET</div>
+      <div className="bw-badge"><i></i>ECOMMERCE BOOKING WIDGET</div>
       <div className="wf">
         <div className="wf-bar">
           <div className="wf-dot"></div><div className="wf-dot"></div><div className="wf-dot"></div>
-          <div className="wf-url">school.bloowatch.com — embedded</div>
+          <div className="wf-url">yourschool.com — embedded</div>
         </div>
         <div className="wf-body">
           <div style={{ fontFamily: 'var(--font-mono)', fontSize: '9px', color: 'var(--slate)', letterSpacing: '.08em', marginBottom: '8px', textTransform: 'uppercase' }}>Browse catalog</div>
@@ -50,7 +50,7 @@ function EcommerceWireframe() {
 function FormsWireframe() {
   return (
     <div className="fb-wrap">
-      <div className="bw-badge"><i></i>BLOOWATCH FORMS APP</div>
+      <div className="bw-badge"><i></i>FORMS BUILDER APP</div>
       <div className="fb">
         <div className="fb-bar">
           <div className="fb-tab on">Builder</div>
@@ -106,7 +106,7 @@ export default function WorkSection() {
           num="card1_num"
           title="card1_title"
           desc="card1_desc"
-          tags={['Sole PM', 'Ember → React', '4 product types', 'Q4 2025 – Q3 2026']}
+          tags={['Sole PM', 'Ember → React', '6 types · 4 shipped', 'Q4 2025 – Q2 2026']}
         >
           <EcommerceWireframe />
         </CaseCard>

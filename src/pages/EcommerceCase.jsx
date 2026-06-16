@@ -41,6 +41,20 @@ export default function EcommerceCase() {
       </section>
 
       <section className="cs-section">
+        <div className="wrap two-col">
+          <div>
+            <div className="eyebrow">{t('ec.disc_eyebrow')}</div>
+            <h2 className="cs-h">{t('ec.disc_h')}</h2>
+          </div>
+          <div className="cs-body">
+            <p {...html(t, 'ec.disc_p1')} />
+            <p {...html(t, 'ec.disc_p2')} />
+            <p {...html(t, 'ec.disc_p3')} />
+          </div>
+        </div>
+      </section>
+
+      <section className="cs-section">
         <div className="wrap">
           <div className="eyebrow">{t('ec.s2_eyebrow')}</div>
           <h2 className="cs-h">{t('ec.s2_h')}</h2>
@@ -51,6 +65,7 @@ export default function EcommerceCase() {
             <Reveal className="stat"><b>250<sup>+</sup></b><span>{t('ec.stat3_s')}</span></Reveal>
             <Reveal className="stat"><b>1</b><span>{t('ec.stat4_s')}</span></Reveal>
           </div>
+          <p className="cs-body" style={{ marginTop: 24 }} {...html(t, 'ec.s2_after')} />
         </div>
       </section>
 
@@ -90,15 +105,24 @@ export default function EcommerceCase() {
           <div className="cs-body"><p>{t('ec.s4_intro')}</p></div>
 
           <Reveal className="callout">
-            <div className="lbl">{t('ec.c1_l')}</div>
-            <p>{t('ec.c1_p')}</p>
+            <div className="lbl">{t('ec.d1_l')}</div>
+            <p {...html(t, 'ec.d1_p')} />
           </Reveal>
 
           <Reveal className="callout">
-            <div className="lbl">{t('ec.c3_l')}</div>
-            <p>{t('ec.c3_p')}</p>
+            <div className="lbl">{t('ec.d2_l')}</div>
+            <p {...html(t, 'ec.d2_p')} />
           </Reveal>
-          <Reveal className="quote" {...html(t, 'ec.quote')} />
+
+          <Reveal className="callout">
+            <div className="lbl">{t('ec.d3_l')}</div>
+            <p {...html(t, 'ec.d3_p')} />
+          </Reveal>
+
+          <Reveal className="callout">
+            <div className="lbl">{t('ec.c1_l')}</div>
+            <p {...html(t, 'ec.c1_p')} />
+          </Reveal>
         </div>
       </section>
 
@@ -117,6 +141,23 @@ export default function EcommerceCase() {
       </section>
 
       <section className="cs-section">
+        <div className="wrap">
+          <div className="eyebrow">{t('ec.out_eyebrow')}</div>
+          <h2 className="cs-h">{t('ec.out_h')}</h2>
+          <p className="cs-body">{t('ec.out_intro')}</p>
+          <Reveal className="honesty">
+            <ul>
+              <li {...html(t, 'ec.out_li1')} />
+              <li {...html(t, 'ec.out_li2')} />
+              <li {...html(t, 'ec.out_li3')} />
+              <li {...html(t, 'ec.out_li4')} />
+            </ul>
+          </Reveal>
+          <p className="cs-note">{t('ec.out_note')}</p>
+        </div>
+      </section>
+
+      <section className="cs-section">
         <div className="wrap two-col">
           <div>
             <div className="eyebrow">{t('ec.s6_eyebrow')}</div>
@@ -127,19 +168,6 @@ export default function EcommerceCase() {
             <p {...html(t, 'ec.s6_p2')} />
             <p>{t('ec.s6_p3')}</p>
           </div>
-        </div>
-      </section>
-
-      <section className="cs-section">
-        <div className="wrap">
-          <Reveal className="honesty">
-            <div className="lbl">{t('ec.s7_l')}</div>
-            <ul>
-              <li {...html(t, 'ec.s7_li1')} />
-              <li {...html(t, 'ec.s7_li2')} />
-              <li {...html(t, 'ec.s7_li3')} />
-            </ul>
-          </Reveal>
         </div>
       </section>
 
