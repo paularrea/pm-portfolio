@@ -50,7 +50,7 @@ function EcommerceWireframe() {
 function FormsWireframe() {
   return (
     <div className="fb-wrap">
-      <div className="bw-badge"><i></i>FORMS BUILDER APP</div>
+      <div className="bw-badge"><i></i>FORMS APP</div>
       <div className="fb">
         <div className="fb-bar">
           <div className="fb-tab on">Builder</div>

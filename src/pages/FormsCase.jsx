@@ -52,11 +52,15 @@ export default function FormsCase() {
       </section>
 
       <section className="cs-section">
-        <div className="wrap">
-          <div className="eyebrow">{t('fm.s2_eyebrow')}</div>
-          <h2 className="cs-h">{t('fm.s2_h')}</h2>
-          <div className="cs-body"><p {...html(t, 'fm.s2_intro')} /></div>
-          <div className="cs-body" style={{ marginTop: '20px' }}><p>{t('fm.s2_after')}</p></div>
+        <div className="wrap two-col">
+          <div>
+            <div className="eyebrow">{t('fm.s2_eyebrow')}</div>
+            <h2 className="cs-h">{t('fm.s2_h')}</h2>
+          </div>
+          <div className="cs-body">
+            <p {...html(t, 'fm.s2_intro')} />
+            <p>{t('fm.s2_after')}</p>
+          </div>
         </div>
       </section>
 
@@ -81,25 +85,27 @@ export default function FormsCase() {
         <div className="wrap">
           <div className="eyebrow">{t('fm.s5_eyebrow')}</div>
           <h2 className="cs-h">{t('fm.s5_h')}</h2>
+          <p className="cs-body">{t('fm.s5_lead')}</p>
           <Reveal className="tl">
             <div className="tl-group">
-              <div className="tl-q">Q3 2023</div>
+              <div className="tl-q">{t('fm.grp1')}</div>
               <div className="tl-rows">
-                <div className="tl-row"><div className="tl-v">v1</div><div className="tl-s"><span className="ph-st">{t('fm.ph1_st')}</span><b>{t('fm.ph1_b')}</b><p>{t('fm.ph1_p')}</p></div></div>
+                <div className="tl-row"><div className="tl-v">V1</div><div className="tl-s"><span className="ph-st">{t('fm.ph1_st')}</span><b>{t('fm.ph1_b')}</b><p>{t('fm.ph1_p')}</p></div></div>
               </div>
             </div>
             <div className="tl-gap">{t('fm.gap')}</div>
             <div className="tl-group">
-              <div className="tl-q">2025</div>
+              <div className="tl-q">{t('fm.grp2')}</div>
               <div className="tl-rows">
-                <div className="tl-row"><div className="tl-v">v2</div><div className="tl-s"><span className="ph-st">{t('fm.ph2_st')}</span><b>{t('fm.ph2_b')}</b><p>{t('fm.ph2_p')}</p></div></div>
+                <div className="tl-row"><div className="tl-v">V2.1</div><div className="tl-s"><span className="ph-st">{t('fm.ph2_st')}</span><b>{t('fm.ph2_b')}</b><p>{t('fm.ph2_p')}</p></div></div>
+                <div className="tl-row"><div className="tl-v">V2.2</div><div className="tl-s"><span className="ph-st">{t('fm.ph3_st')}</span><b>{t('fm.ph3_b')}</b><p>{t('fm.ph3_p')}</p></div></div>
               </div>
             </div>
-            <div className="tl-gap">{t('fm.gap')}</div>
             <div className="tl-group">
-              <div className="tl-q">Q1 2026</div>
+              <div className="tl-q">{t('fm.grp3')}</div>
               <div className="tl-rows">
-                <div className="tl-row"><div className="tl-v">v3</div><div className="tl-s"><span className="ph-st">{t('fm.ph3_st')}</span><b>{t('fm.ph3_b')}</b><p>{t('fm.ph3_p')}</p></div></div>
+                <div className="tl-row"><div className="tl-v">V3.1</div><div className="tl-s"><span className="ph-st">{t('fm.ph4_st')}</span><b>{t('fm.ph4_b')}</b><p>{t('fm.ph4_p')}</p></div></div>
+                <div className="tl-row"><div className="tl-v">V3.2</div><div className="tl-s"><span className="ph-st">{t('fm.ph5_st')}</span><b>{t('fm.ph5_b')}</b><p {...html(t, 'fm.ph5_p')} /></div></div>
               </div>
             </div>
           </Reveal>
@@ -108,14 +114,29 @@ export default function FormsCase() {
 
       <section className="cs-section">
         <div className="wrap">
+          <div className="eyebrow">{t('fm.out_eyebrow')}</div>
+          <h2 className="cs-h">{t('fm.out_h')}</h2>
           <Reveal className="honesty">
-            <div className="lbl">{t('fm.s7_l')}</div>
             <ul>
-              <li {...html(t, 'fm.s7_li1')} />
-              <li {...html(t, 'fm.s7_li2')} />
-              <li {...html(t, 'fm.s7_li3')} />
+              <li {...html(t, 'fm.out_li1')} />
+              <li {...html(t, 'fm.out_li2')} />
+              <li {...html(t, 'fm.out_li3')} />
+              <li {...html(t, 'fm.out_li4')} />
             </ul>
           </Reveal>
+          <p className="cs-note">{t('fm.out_note')}</p>
+        </div>
+      </section>
+
+      <section className="cs-section">
+        <div className="wrap two-col">
+          <div>
+            <div className="eyebrow">{t('fm.sc_eyebrow')}</div>
+            <h2 className="cs-h">{t('fm.sc_h')}</h2>
+          </div>
+          <div className="cs-body">
+            <p>{t('fm.sc_p')}</p>
+          </div>
         </div>
       </section>
 
